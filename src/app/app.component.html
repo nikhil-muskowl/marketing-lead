@@ -1,20 +1,151 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<div class="area1">
 
+    <div class="row header">
+        <div class="col-md-12">
+            <div class="float-right">
+                <img src="../assets/images/logo/CRSP-CONNECT.png">
+            </div>
+            <img src="../assets/images/logo/MuskOwl-LLP.png">
+        </div>
+    </div>
+
+
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="section1">
+                <p>We are coming to the USA in July 2018.</p>
+                <h2>Book your one-on-one meeting now!</h2>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <app-lead-form></app-lead-form>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container text-center">
+    <h2 class="heading1">WHO WE ARE</h2>
+
+    <p>
+        MuskOwl is one of the fastest growing digital agencies providing customized digital solutions, with its office located in
+        India & Hong Kong. Our Sister concern, CRSP Connect Pvt. Ltd., is one of the leading Consultancy (Legal) and Knowledge
+        Process outsourcing firms with the client base spread across the globe, offering its client access to broad range
+        of services. We are coming to the USA to collaborate with IT companies and CPAs for mutual sustainable growth.
+    </p>
+
+    <div class="text-center">
+        <h2 class="heading1">WHAT WE DO</h2>
+    </div>
+
+    <a href="http://www.muskowl.com" target="_blank">
+        <button class="btn btn-1">MUSKOWL</button>
+    </a>
+
+    <div class="dropdown">
+    <select (change)="onChange($event.target.value)">
+        <option *ngFor="let value of data;let i = index;" value="{{i}}">{{value.name}}</option>
+    </select>
+</div>
+    <p class="drop-p">{{text}}</p>
+
+    
+    <!-- Tab panes -->
+
+    <!-- <div class="horizontal-list-container1">
+        <ul class="horizontal-list">
+            <li>Digital Marketing</li>
+            <li>B2b Marketing</li>
+            <li>Digital Strategy & Analytics</li>
+            <li>Content Marketing</li>
+            <li>Website Design & Development</li>
+            <li>Ecommerce Solutions</li>
+            <li>Web Security</li>
+            <li>Graphic Designing</li>
+            <li>Mobile Application Design & Development</li>
+            <li>Logo Design</li>
+            <li>Data Analysis</li>
+            <li>Web Based Softwares</li>
+        </ul>
+    </div> -->
+</div>
+
+
+<div class="area2">
+    <div class="text-center">
+        <a href="http://crspconnect.com" target="_blank">
+            <button class="btn btn-2">CRSP CONNECT</button>
+        </a>
+        <div class="dropdown">
+                <select (change)="onChangecrsp($event.target.value)">
+                    <option *ngFor="let value of datacrsp;let j = index;" value="{{j}}">{{value.name}}</option>
+                </select>
+            </div>
+                <p class="drop-p">{{textcrsp}}</p>
+        <!-- <div class="horizontal-list-container2">
+            <ul class="horizontal-list">
+                <li>Book-Keeping Services</li>
+                <li>Accounting Services</li>
+                <li>Account Payable</li>
+                <li>Account Receivable</li>
+                <li>Tax Preparation</li>
+                <li>Payroll Services</li>
+                <li>Data Entry</li>
+                <li>Virtual CFO/Controller</li>
+                <li>Financial Consulting</li>
+            </ul>
+        </div> -->
+    </div>
+
+
+
+
+    <hr class="line2">
+
+    <div class="text-center">
+        <h2 class="heading1">GET IN TOUCH</h2>
+
+        <h3>EMAIL ID</h3>
+        <p>
+            <a href="mailto:contact@muskowl.com">contact@muskowl.com</a>
+        </p>
+        <p>
+            <a href="mailto:info@crpsconnect.com">info@crspconnect.com</a>
+        </p>
+        <br>
+        <h3>CONTACT</h3>
+        <p>India:
+            <a href="tel:+919875770510">+91 9875770510</a> |
+            <a href="tel:+919898819000">+91 9898819000</a>
+        </p>
+        <p>USA:
+            <a href="tel:+1929.275.7387">+1 929.275.7387</a> |
+            <a href="tel:+1518.855.8062">+1 518.855.8062</a>
+        </p>
+        <hr class="line1">
+
+        <ul class="list-inline">
+            <li class="list-inline-item">
+                <img src="../assets/images/social/facebook.png">
+            </li>
+            <li class="list-inline-item">
+                <img src="../assets/images/social/linkedin.png">
+            </li>
+            <li class="list-inline-item">
+                <img src="../assets/images/social/twitter.png">
+            </li>
+            <li class="list-inline-item">
+                <img src="../assets/images/social/instagram.png">
+            </li>
+        </ul>
+
+    </div>
+
+</div>
+
+<div class="footer">
+    <p>&copy; 2018. All Rights Reserved.</p>
+    <p>Designed & Developed by MuskOwl</p>
+</div>

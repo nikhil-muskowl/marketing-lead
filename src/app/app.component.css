@@ -1,0 +1,17 @@
+.dropdown select {
+    text-transform: none;
+    background-color: transparent!important;
+    color: #fff;
+    padding: 0.5rem 7rem;
+    margin-top: 9vh;
+    border-radius: 20px;
+}
+option:nth-child(n) { 
+    background: #272727!important;
+}
+.drop-p {
+    margin-top: 3rem; 
+}
+select:focus, select:visited {
+    outline: none !important;
+}

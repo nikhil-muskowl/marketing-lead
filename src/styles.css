@@ -1,1 +1,221 @@
 /* You can add global styles to this file, and also import other style files */
+
+@font-face {
+    font-family: 'Helvetica';
+    src: local('Helvetica'), url('assets/fonts/HELR45W.TTF');
+    font-style: normal;
+    font-weight: lighter;
+}
+
+body {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    background-color: #272727 !important;
+    color: #FEFEFE !important;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 200;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.8rem;
+}
+
+a {
+    color: #fff !important;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.area1 {
+    background-image: url('assets/images/manhattan.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 2rem 3rem 3rem 3rem;
+}
+
+.area1 .header {
+    margin-bottom: 2rem;
+}
+
+.area1 .section1 {
+    margin-top: 10rem;
+}
+
+.area1 .section1 p {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.area1 .section1 h2 {
+    font-size: 3.5rem;
+    font-weight: 400;
+}
+
+.area2 {
+    background-image: url('assets/images/patrick-tomasso.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2rem 3rem 5rem 3rem;
+}
+
+.line1 {
+    background: #fff;
+    height: 0.02rem;
+    width: 20%;
+}
+
+.line2 {
+    background: #fff;
+    height: 0.02rem;
+    width: 100%;
+}
+
+.heading1 {
+    color: #4ECBFF;
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    display: inline-block;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+.heading1:before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 1px;
+    bottom: -10px;
+    left: 25%;
+    border-bottom: 1px solid #fff;
+}
+
+.btn-1 {
+    padding: 10px 70px!important;
+    background-color: #82c5e2;
+    border-color: #82c5e2;
+    border-color: #0d88df;
+    border-radius: 5rem !important;
+    color: #fff;
+    font-size: 1.5rem !important;
+    background: #0D88DF;
+    background: -webkit-linear-gradient(to bottom, #0D88DF, #4ECBFF);
+    background: -o-linear-gradient(to bottom, #0D88DF, #4ECBFF);
+    background: -moz-linear-gradient(to bottom, #0D88DF, #4ECBFF);
+    background: linear-gradient(to bottom, #0D88DF, #4ECBFF);
+}
+.btn-2 {
+    padding: 10px 45px!important;
+    background-color: #82c5e2;
+    border-color: #82c5e2;
+    border-color: #0d88df;
+    border-radius: 5rem !important;
+    color: #fff;
+    font-size: 1.5rem !important;
+    background: #0D88DF;
+    background: -webkit-linear-gradient(to bottom, #0D88DF, #4ECBFF);
+    background: -o-linear-gradient(to bottom, #0D88DF, #4ECBFF);
+    background: -moz-linear-gradient(to bottom, #0D88DF, #4ECBFF);
+    background: linear-gradient(to bottom, #0D88DF, #4ECBFF);
+}
+
+.horizontal-list-container1 {
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.horizontal-list-container2 {
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.horizontal-list {
+    list-style: none;
+    font-size: 1rem;
+    line-height: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.horizontal-list li {
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+.horizontal-list li:before {
+    content: '.';
+    font-size: 5rem;
+}
+
+.footer {
+    text-align: center;
+    line-height: 5px;
+    margin-top: 1rem;
+}
+
+.footer p {
+    font-size: 1rem;
+    line-height: 0.5rem;
+}
+
+.lead-form {
+    padding: 2rem 2rem 2rem 2rem;
+    background-color: rgba(50, 50, 50, 0.8);
+    border-radius: 5%;
+    width: 80%;
+}
+
+.lead-form .form-control {
+    font-size: 1.4rem;
+    border-radius: 0.8rem;
+}
+
+.lead-form .btn-light {
+    text-align: left;
+    border-radius: 0.8rem;
+    font-size: 1.4rem;
+    color: #666;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+}
+
+.lead-form .btn-primary {
+    background-color: #82c5e2;
+    border-color: #82c5e2;
+    border-color: #0d88df;
+    border-radius: 1rem !important;
+    color: #fff;
+    font-size: 1.5rem !important;
+    background: #0D88DF;
+    background: -webkit-linear-gradient(to bottom, #0D88DF, #4ECBFF);
+    background: -o-linear-gradient(to bottom, #0D88DF, #4ECBFF);
+    background: -moz-linear-gradient(to bottom, #0D88DF, #4ECBFF);
+    background: linear-gradient(to bottom, #0D88DF, #4ECBFF);
+}
+@media only screen and (max-width: 1000px) {
+    .lead-form {
+        padding: 2rem 2rem 2rem 2rem;
+        background-color: rgba(50, 50, 50, 0.8);
+        border-radius: 5%;
+        width: 100%;
+    }
+}
+
+.dropdown-item {
+    color: #212529 !important;
+}
